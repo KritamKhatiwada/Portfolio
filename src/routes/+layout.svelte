@@ -5,53 +5,22 @@
 	let { children } = $props();
 </script>
 
-<div class="app">
+<div class="app px-6">
+	<div class="border-b-1 h-16 flex-row justify-end-safe">
+	<p>	Date: 2025/01/18 to right  </p>
+	</div>
+	<div class=" flex align-middle justify-center">
+		<p class="text-[150px]">The Khatiwada Times</p>
+	</div>
 	<Header />
 
-	<main>
+	<main class="px-6">
 		{@render children()}
 	</main>
-
-	<footer>
-		<p>
-			visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to learn about SvelteKit
-		</p>
-	</footer>
 </div>
-
-<style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
+<style lang="postcss">
+	@reference "tailwindcss";
+	:global(html) {
+	  background-color: theme(--color-gray-100);
 	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
-</style>
+  </style>
