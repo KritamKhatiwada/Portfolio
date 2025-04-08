@@ -5,16 +5,19 @@
 	let { children } = $props();
 </script>
 
-<div class="app px-6">
-	<div class="border-b-1 h-16 flex-row justify-end-safe">
-	<p>	Date: 2025/01/18 to right  </p>
+<div class="app px-6 relative">
+	<div class="select-none ">
+		<div class="border-b-1 h-16 flex items-center justify-end">
+			<p>	Date: 2025/01/18 with npm  </p>
+			</div>
+			<div class=" flex align-middle justify-center">
+				<p class="lg:text-9xl md:text-7xl sm:text-6xl tracking-wide">The Khatiwada Times</p>
+			</div>
 	</div>
-	<div class=" flex align-middle justify-center">
-		<p class="text-[150px]">The Khatiwada Times</p>
-	</div>
+
 	<Header />
 
-	<main class="px-6">
+	<main class=" h-500 ">
 		{@render children()}
 	</main>
 </div>

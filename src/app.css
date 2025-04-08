@@ -11,8 +11,7 @@
 	--color-bg-0: rgb(202, 216, 228);
 	--color-bg-1: hsl(209, 36%, 86%);
 	--color-bg-2: hsl(224, 44%, 95%);
-	--color-theme-1: #ff3e00;
-	--color-theme-2: #4075a6;
+	--color-theme-1: #D23939;
 	--color-text: #0A0909
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
@@ -27,9 +26,8 @@ body {
 	background-attachment: fixed;
 	background-color: var(--color-bg-1);
 	background-size: 100vw 100vh;
-	background-image:
-		radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 100%),
-		linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
+	background: rgb(221,207,181);
+background: linear-gradient(225deg, rgba(221,207,181,1) 0%, #D3BD95 67%);
 }
 
 h1,
