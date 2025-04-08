@@ -4,10 +4,11 @@
 /* @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography'; */
 
+
 :root {
 	--font-body:
 		"Noto Serif Display", serif;
-	--font-mono: 'Fira Mono', monospace;
+	--font-mono: 'Inter Variable', sans-serif;
 	--color-bg-0: rgb(202, 216, 228);
 	--color-bg-1: hsl(209, 36%, 86%);
 	--color-bg-2: hsl(224, 44%, 95%);
@@ -27,7 +28,7 @@ body {
 	background-color: var(--color-bg-1);
 	background-size: 100vw 100vh;
 	background: rgb(221,207,181);
-background: linear-gradient(225deg, rgba(221,207,181,1) 0%, #D3BD95 67%);
+background: linear-gradient(225deg, #DDCFB5 0%, #D3BD95 20%);
 }
 
 h1,
@@ -41,11 +42,13 @@ p {
 }
 
 a {
-	color: var(--color-theme-1);
+	
+	
 	text-decoration: none;
 }
 
 a:hover {
+	color: var(--color-theme-1);
 	text-decoration: underline;
 }
 
@@ -81,7 +84,7 @@ pre {
 input,
 button {
 	font-size: inherit;
-	font-family: inherit;
+	font-family: var(--font-mono);
 }
 
 button:focus:not(:focus-visible) {
@@ -105,3 +108,9 @@ button:focus:not(:focus-visible) {
 	width: 1px;
 	white-space: nowrap;
 }
+
+.custom-dashed-border {
+	border: 1.5px dashed transparent;
+	border-image: repeating-linear-gradient(40deg, #000 0 10px, transparent 8px 18px) 1;
+  }
+  
