@@ -1,8 +1,12 @@
 @import 'tailwindcss';
-@import '@fontsource/fira-mono';
-@import "@fontsource/roboto-serif"; 
-@import "@fontsource/roboto-serif/400.css"; 
-@import "@fontsource/roboto-serif/400-italic.css"; 
+@import "@fontsource-variable/inter/700.css";
+@import "@fontsource-variable/inter/600.css";
+@import "@fontsource-variable/inter/400.css";
+@import "@fontsource-variable/inter/400-italic.css";
+@import "@fontsource/noto-serif-display/700.css"; 
+@import "@fontsource/noto-serif-display/600.css";  
+@import "@fontsource/noto-serif-display/400.css"; 
+@import "@fontsource/noto-serif-display/400-italic.css"; 
 /* 
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography'; */
@@ -17,7 +21,6 @@
 	--color-text: #0A0909
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
-	font-family: "Roboto Serif";
 	color: var(--color-text);
 	--font-heading: 110px;
 	
@@ -56,7 +59,7 @@ a {
 
 a:hover {
 	color: var(--color-theme-1);
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 h1 {

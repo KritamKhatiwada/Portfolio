@@ -40,6 +40,6 @@
 	},
 	"dependencies": {
 		"@fontsource-variable/inter": "^5.2.5",
-		"@fontsource/roboto-serif": "^5.2.5"
+		"@fontsource/noto-serif-display": "^5.2.6"
 	}
 }
