@@ -6,6 +6,8 @@
 	import jslogo from '$lib/images/javascript-svgrepo-com.svg';
 	import illustratorlogo from '$lib/images/adobe-illustrator-svgrepo-com.svg';
 	import fresco from '$lib/images/adobe-fresco-icon.svg';
+	import linklogo from '$lib/images/adobe-illustrator-svgrepo-com.svg';
+	import handPic from '$lib/images/Hand-semi.png';
 	// import maillogo from '$lib/images/mail-svgrepo-com.svg';
 	import figma from '$lib/images/figma.svg'
 	import img4now from '$lib/images/imagefornow.jpg'
@@ -15,11 +17,11 @@
 	<title>Home</title>
 	<meta name="description" content="home" />
 </svelte:head>
-<div class="flex px-0 ">
-	<div class="w-[45%] border-r-2 border-b-2 ">
+<div id="hero" class="flex  ">
+	<div class="w-[30%] border-r-2 border-b-2 ">
 		
-		<div class="  flex  mb-6 border-black border-y-2  w-full  text-[#D23939] font-serif">
-			<p class="text-8xl text-shadow-lg">WANTED</p>
+		<div class="  flex  mb-6 border-black border-y-2  w-full ">
+			<p class="text-8xl mr-3">WANTED</p>
 		</div>
 		<!-- <p class="text-xl  italic"> For Skills in Code & Design</p> -->
 		<!-- <div class=" py-5 mr-2 mb-6 border-y-1 w-full select-none"><img src={namelogo} alt="Name" srcset="">
@@ -64,5 +66,20 @@
 			take own picture wide shot
 			add second page
 			change the figma logo to red -->
-		</div>
+	</div>
+</div>
+<div id="projects" class="flex mt-40 px-0">
+	<div class="w-[70%]">
+		<img class="" src={handPic} alt="Project Showcase" srcset="">
+	</div>
+
+	<div class="border-l-2 border-b-2 gap-3 flex flex-col items-end text-end w-[30%]"><p class=" mb-6 border-black border-y-2  w-full text-8xl ">PROJECTS</p>
+	<h1 class="mt-6 ">Amazon</h1>
+	<p class="p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+		molestias numquam dolor odio fuga debitis harum quisquam voluptatibus porro ex 
+		nulla quo esse accusantium.
+	</p>
+	<button class=" p-2  bg-[#D3BD95] shadow-md">
+		<div class="p-2 flex flex-row custom-dashed-border items-center justify-center gap-3">View<img src={linklogo} alt="view" class="h-5 " /></div></button>
+	</div>
 </div>
