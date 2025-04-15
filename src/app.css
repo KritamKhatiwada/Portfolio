@@ -42,9 +42,7 @@ opacity: 1;
 mix-blend-mode: normal;
 }
 
-h1,
-h2,
-p {
+h1 {
 	font-weight: 400;
 }
 
